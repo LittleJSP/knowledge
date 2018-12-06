@@ -30,7 +30,7 @@ window.onload=startList;
  <ul>
     <li><a href="exitServlet">ÍË³ö</a></li>
     <li><a href="inputRegisterMess.jsp#content">×¢²á</a></li>
-    <li><a href="login.jsp#content">µÇÂ¼</a></li>
+    <li><a href="login.jsp">µÇÂ¼</a></li>
   </ul>
 <div class="zhongjian"> <h1>ÉñÆæÊéÎİ</h1></div>
 
