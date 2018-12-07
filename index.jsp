@@ -40,10 +40,7 @@ window.onload=startList;
 <div align="center" class="daohang">
 <ul>
   <li><a href="index.jsp">首页</a></li>
-  <li><a href="lookBook.jsp#content">浏览书籍</a>
-    <ul><a href="#">电子书</a></ul>
-    <ul><a href="#">图书</a></ul>
-</li>
+  <li><a href="lookBook.jsp#content">浏览书籍</a></li>
   <li><a href="searchBook.jsp#content">查询书籍</a></li>
   <li><a href="lookOrderForm.jsp#content">查看订单</a></li>
    <li><a href="lookShoppingCar.jsp#content">我的购物车</a></li>

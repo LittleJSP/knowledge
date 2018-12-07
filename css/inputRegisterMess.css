@@ -3,115 +3,96 @@
 @charset "utf-8";
 
 body{
-	
 margin:0px;
 padding:0px;
 font-family:Tahoma, Geneva, sans-serif;
 line-height:1.5em;
 background-color:#FFC;
-width:1365px;
-height:1400px;
+width:1345px;
+background-image:url(../image/bigbook.jpg);
+background-position:center;
+background-size:100% 100%;
+background-attachment:fixed;
+background-repeat:no-repeat;
+text-align:center;
 }
 
-.header {	/*ҳ�涥������ʽ*/
-width: 1365px;
-height: 625px;
-background-color:#FFC;
+.warpper{
+    margin:0 auto;
+    text-align:center;
+    width:100%;
+    
+}
+
+.header{	/*上面部分*/
+width: 1345px;
 text-align:center;
 margin:0 auto;
-background-image:url(../image/bigbook.jpg);
-background-size:100% 100%;
-background-position:center;
-
+position:absolute;
 }
 
-.header ul{
+.header h2{
+font-size:70px;
+position:absolute;
+top:9px;
+left:540px;
+}
+
+.xiaodaohang ul{
 z-index:100;
 margin:0 0 0 14px;
 padding:0;
 list-style-type:none;
 }
 
-.header ul li{
+.xiaodaohang ul li{
 padding: 0 2px;
 position: relative;
 display: inline;
 float:right;
-right:90px;
-top:10px;
+right:20px;
+top:-30px;
 z-index: 100;
-height: 30px;
+height:30px;
 }
 
-.header ul li a{
+.xiaodaohang ul li a{
 display:block;
 padding:2px 5px;
 height:25px;
 line-height:25px;
 font-weight: bold;
 font-size:15px;
-
 color:#fff;
 text-decoration:none;
 outline:none;
 text-align:center;
 }
 
-
-
-.header ul li a:link{
-
+.xiaodaohang ul li a:link{
 color:#FFF;
 }
 
 
-
-.header ul li a.selected,.header ul li a:hover{
+.xiaodaohang ul li a.selected,.xiaodaohang ul li a:hover{
 color:#000;
 background-color:#D9D9D9;
 opacity: 0.8;
-	}
-
-
-.zhongjian{
-width: 1365px;
-height: 308px;
-background-color: rgba(255,255,255,0.3);
-position: relative;
-left: 0px;
-top: 122px;
 }
 
 
-.zhongjian h1{
-font-size:100px;
-text-align:center;
-position: relative;
-top:65px;
-left:85px;
-}
 
-.header p {
-color: #FFF;
-position: relative;
-left: 24px;
-top: -30px;
-font-size:20px;
-font-weight:bold;
-width: 300px;
-height: 32px;
-margin: 5px auto;
-}
-
+/*导航*/
 .daohang ul li{
 position:relative;
 display:inline;
 float:left;
-padding: 0 1px;
-left:395px;
-top:0px;
+padding: 0 0.4px;
+left:360px;
+top:98px;
 z-index:100;
 height: 30;
+margin:0 auto;
 }
 
 .daohang a:link{
@@ -120,14 +101,15 @@ background:#630;
 
 .daohang ul li a{
 display:block;
-padding:0 30px;
-height:40px;
-line-height:40px;
-font-size:15px;
+padding:0 28px;
+height:38px;
+line-height:37px;
+font-size:16px;
 color: #FFF;
 text-decoration:none;
 outline:none;
 text-align:center;
+font-weight:bold;
 }
 
 .daohang ul li a.select,.daohang ul li a:hover{
@@ -136,19 +118,19 @@ text-align:center;
   opacity: 0.9;
 }
 
+
 #content{
-	width: 1363px;
-        height: 500px;
-	background:#FFF;
+	width:1030px;
+        height:450px;
 	position:relative;
+        background-color: rgba(255,255,255,0.8);
+        top:173px;
 	z-index:0;
-        float:left;
-	border-right:solid thin #CCC;
-	border-left:solid thin #CCC;
-	border-bottom:solid thin #CCC;
+        margin:0 auto;
+	
 }
 
-#content .submit{
+.submit{
 	background:#8F4B18;
 	font-size: 14px;
 	color: #FFF;
@@ -156,25 +138,23 @@ text-align:center;
 	width: 56px;
 	height: 28px;
         position: absolute;
-        left: 650px;
-	top: 180px;
+        left: 485px;
+	top: 190px;
 	margin-top:0px;
 }
 
 
 /*底部*/
 .footer{
-	width: 1350px;
-	height: 125px;
 	position:relative;
-	color:#333;
-	float: left;
-	border:none;
+        top:30px;
+        margin:0 auto;
 }
 .footer p{
-        color:#333;
+        color:rgba(255,255,255,0.5);
 	font-weight:bold;
 	position:relative;
+        font-size:10px;
 }
 
 .footer a {

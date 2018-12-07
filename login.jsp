@@ -64,7 +64,9 @@
 <a href="lookShoppingCar.jsp#content">我的购物车</a>
      <br />
       Copyright &copy; &nbsp;<a href="index.jsp">神奇书屋</a>&nbsp;&nbsp;2018 &nbsp;&nbsp;| &nbsp;&nbsp;热线：888-520-1314&nbsp;&nbsp;| &nbsp;&nbsp;地址：深圳市南山区华侨城暨南大学深圳旅游学院</p></div>
-</div></div>
+</div>
+
+
 
 </div>
   

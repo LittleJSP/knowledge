@@ -6,7 +6,7 @@
 </head>
 
 <body>
-<div id="body_warpper">
+<div id="warpper">
 <div class="header">
  <ul>
     <li><a href="exitServlet">ÍË³ö</a></li>
