@@ -2,9 +2,42 @@
 <%@ page import ="mybean.data.Login" %>
 <%@ page import ="java.util.*" %>
 <jsp:useBean id="loginBean" class= "mybean.data.Login" scope="session"/>
-<HTML><HEAD><%@ include file ="head.txt" %>
-<BODY background= image/happy.jpg><font size=2>
+
+<HTML>
+<head>
+<style type="text/css">
+@import url("css/lookbookcar.css");
+</style></head>
+
+<body>
+
+<div class="warpper">
+
+<div class="header">
+<br/><h2 align="center">神奇书屋</h2>
+
+<div align="center" class="daohang">
+<ul>
+  <li><a href="index.jsp">首页</a></li>
+   <li><a href="lookBook.jsp#content">浏览书籍</a></li>
+  <li><a href="searchBook.jsp#content">查询书籍</a></li>
+  <li><a href="lookOrderForm.jsp#content">查看订单</a></li>
+  <li><a href="lookShoppingCar.jsp#content">我的购物车</a></li>
+</ul></div>
+
+<div class="xiaodaohang">
+ <ul>
+    <li><a href="exitServlet">退出</a></li>
+    <li><a href="inputRegisterMess.jsp#content">注册</a></li>
+    <li><a href="login.jsp#content">登录</a></li>
+  </ul>
+</div>
+</div>
+
+
+<div class="content">
 <div align = "center">
+<br/>
 <%  if(loginBean==null){
         response.sendRedirect("login.jsp");
       }
@@ -13,15 +46,16 @@
       if(b)
         response.sendRedirect("login.jsp");
     }
-    LinkedList car= loginBean.getCar();
+    LinkedList car=loginBean.getCar();
     if(car==null)
-      out.print("<h2>购物车没有物品</h2>");
+      out.print("<h3>购物车没有物品</h3>");
     else {
     Iterator<String> iterator = car.iterator();
     StringBuffer buyGoods = new StringBuffer();
     int n = 0;
     double priceSum =0;
-    out.print("购物车中的物品:<table border=2>");
+    out.print("<br/>");
+    out.print("<h3>购物车中的物品:</h3><table border=2>");
     while(iterator.hasNext()){
         String goods = iterator.next();
         String showGoods = "";
@@ -34,17 +68,32 @@
         buyGoods.append(n+":"+showGoods);
         String del = "<form action='deleteServlet' method='post'>"
           +"<input type ='hidden' name='delete' value ="+goods+">"
-          +"<input type='submit' value='删除'></form>";
+          +"<input type='submit' value='删除' class='shanchu'></form>";
         out.print("<tr><td>"+ showGoods+"</td>");
         out.print("<td>"+del+"</td></tr>");
     }
     out.print("</table>");
+    out.print("<br/>");
     String orderForm = "<form action='buyServlet'method='post'>" +
       "<input type ='hidden'name = 'buy' value ="+buyGoods+">" +
       "<input type ='hidden'name = 'price' value="+priceSum+">" +
-      "<input type ='submit' value ='下单'></form>";
+      "<input type ='submit' value ='下单' class='submit'></form>";
     out.print(orderForm);
 }
 %>
-</div></font>
-</BODY></HTML>
+</div>
+
+
+<div class="footer">
+    <p align="center"><a href="index.jsp">首页</a> |
+<a href="lookBook.jsp#content">浏览书籍</a>|
+<a href="searchBook.jsp#content">查询书籍</a> |
+<a href="lookOrderForm.jsp#content">查看订单</a> |
+<a href="lookShoppingCar.jsp#content">我的购物车</a>
+     <br />
+      Copyright &copy; &nbsp;<a href="index.jsp">神奇书屋</a>&nbsp;&nbsp;2018&nbsp;&nbsp;| &nbsp;&nbsp;热线：888-520-1314&nbsp;&nbsp;| &nbsp;&nbsp;地址：深圳市南山区华侨城暨南大学深圳旅游学院</p><br/></div>
+</div>
+</div>
+
+
+</body></HTML>

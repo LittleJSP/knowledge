@@ -3,17 +3,14 @@
 <HTML>
 <head><style type="text/css">
 @import url("css/login.css");
-
 </style>
 </head>
 
 <body>
 <div class="warpper">
 
-
 <div class="header">
-<br/>
-<h2 align="center">神奇书屋</h2>
+<br/><h2 align="center">神奇书屋</h2>
 
 <div align="center" class="daohang">
 <ul>
@@ -34,39 +31,32 @@
 </div>
 
 
-  <div id="content">
+ <div id="content">
 
-   <div align="center">
    <br/><br/>
    <h1 align="center">登录</h1>
-   <table border = 2>
-   <FORM action ="loginServlet" Method ="post">
+   <table border = 2 align="center">
+   <form action ="loginServlet" Method ="post">
    <tr><td>登录名称：<Input type=text name="logname"></td></tr>
    <tr><td>输入密码：<Input type=password name="password"></td></tr>
    </table>
    <br/>
    <Input type=submit name="g" value ="提交" class="submit">
    </form> 
-   <br/>
-   
-<br/>
+   <br/><br/>
     登录反馈信息：<jsp:getProperty name="loginBean" property="backNews"/>
     <br>登录名称：<jsp:getProperty name="loginBean" property="logname"/>
 
-  </div>
 
-
-  <div class="footer">
-    <p align="center"><a href="index.jsp">首页</a> |
-<a href="ookCosmetic.jsp#content">浏览书籍</a>|
-<a href="searchCosmetic.jsp#content">查询书籍</a> |
+ <div class="footer">
+ <p align="center"><a href="index.jsp">首页</a> |
+<a href="lookBook.jsp#content">浏览书籍</a>|
+<a href="searchBook.jsp#content">查询书籍</a> |
 <a href="lookOrderForm.jsp#content">查看订单</a> |
 <a href="lookShoppingCar.jsp#content">我的购物车</a>
-     <br />
-      Copyright &copy; &nbsp;<a href="index.jsp">神奇书屋</a>&nbsp;&nbsp;2018 &nbsp;&nbsp;| &nbsp;&nbsp;热线：888-520-1314&nbsp;&nbsp;| &nbsp;&nbsp;地址：深圳市南山区华侨城暨南大学深圳旅游学院</p></div>
+   <br />
+   Copyright &copy; &nbsp;<a href="index.jsp">神奇书屋</a>&nbsp;&nbsp;2018 &nbsp;&nbsp;| &nbsp;&nbsp;热线：888-520-1314&nbsp;&nbsp;| &nbsp;&nbsp;地址：深圳市南山区华侨城暨南大学深圳旅游学院</p></div>
 </div>
-
-
 
 </div>
   

@@ -1,19 +1,20 @@
-<%@ page contentType="text/html;charset=gb2312" %><HEAD>
+<%@ page contentType="text/html;charset=gb2312" %>
+<HTML>
 
+<head>
 <style type="text/css">
 @import url("css/inputRegisterMess.css");
-
 </style>
-</HEAD>
+
 
 <jsp:useBean id="userBean" class="mybean.data.Register" scope="request" />
 
 <title>注册页面</title>
-<HTML>
+</head>
 
-<BODY><Font size=2>
+<body>
+
 <div class="warpper">
-
 
 <div class="header">
 <br/>
@@ -39,7 +40,7 @@
 
 
 <div id="content"> 
-  <div align="center">
+  <div class="zhuce" align="center">
     <FORM action="registerServlet" method="post" name=form>
     <table>
 <br/>
@@ -60,8 +61,10 @@
         <td>&nbsp;&nbsp;真实姓名：</td><td><input type=text name="realname"></td>
         
         <td><input type=submit name="g" value="提交" class="submit"></td>
-    </tr></table></Form></div>
+    </tr></table></Form>
+</div>
    <br/>
+
 <div align="center">
     <p><h2>注册反馈</h2>
     <jsp:getProperty name="userBean" property="backNews"/>
@@ -79,8 +82,8 @@
 
 <div class="footer">
 <p align="center"><a href="index.jsp">首页</a> | 
-<a href="ookCosmetic.jsp">浏览书籍</a>| 
-<a href="searchCosmetic.jsp">查询书籍</a> | 
+<a href="lookBook.jsp">浏览书籍</a>| 
+<a href="searchBook.jsp">查询书籍</a> | 
 <a href="lookOrderForm.jsp">查看订单</a> | 
 <a href="lookShoppingCar.jsp">我的购物车</a>
   <br />
@@ -90,4 +93,4 @@
 
 </div>
 
-</Body></HTML>
+</body></HTML>

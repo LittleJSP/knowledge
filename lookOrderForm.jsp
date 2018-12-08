@@ -1,9 +1,50 @@
 <%@ page contentType="text/html;charset=gb2312"%>
 <jsp:useBean id="loginBean" class="mybean.data.Login" scope="session"/>
 <%@ page import="java.sql.*" %>
-<HIML><HEAD><%@ include file="head.txt"%></HEAD>
-<BODY background= image/happy.jpg>
-<div align="center">
+<HIML>
+
+<head>
+<style type="text/css">
+@import url("css/lookorderform.css");
+</style>
+
+<jsp:useBean id="userBean" class="mybean.data.Register" scope="request" />
+
+<title>注册页面</title>
+</head>
+
+<body>
+
+<div class="warpper">
+
+<div class="header">
+<br/>
+<h2 align="center">神奇书屋</h2>
+
+<div align="center" class="daohang">
+<ul>
+  <li><a href="index.jsp">首页</a></li>
+   <li><a href="lookBook.jsp#content">浏览书籍</a></li>
+  <li><a href="searchBook.jsp#content">查询书籍</a></li>
+  <li><a href="lookOrderForm.jsp#content">查看订单</a></li>
+  <li><a href="lookShoppingCar.jsp#content">我的购物车</a></li>
+</ul></div>
+
+<div class="xiaodaohang">
+ <ul>
+    <li><a href="exitServlet">退出</a></li>
+    <li><a href="inputRegisterMess.jsp#content">注册</a></li>
+    <li><a href="login.jsp#content">登录</a></li>
+  </ul>
+</div>
+</div>
+
+
+
+<div id="content">
+
+  <div class="dingdan" align="center">
+<p style="line-height:10px"> &nbsp;</p>
 <%
   if(loginBean== null){
     response.sendRedirect("login.jsp");   //重定向到登录页面
@@ -25,26 +66,42 @@
     con=DriverManager.getConnection(url);
     sql=con.createStatement();
     String cdn="SELECT id,mess,sum FROM orderForm where logname='"+loginBean.getLogname()+"'";
-    rs= sql.executeQuery(cdn);
-    out.print("<table border=2>");
+    rs=sql.executeQuery(cdn);
+    out.print("<h2>订单详情</h2>");
+    out.print("<table border=2 width='850px'>");
     out.print("<tr>");
-    out.print("<th width=100>"+"订单号");
-    out.print("<th width=100>"+"信息");
-    out.print("<th width=100>"+"价格");
-    out.print("</TR>");
+    out.print("<th width=100>"+"订单号"+"</th>");
+    out.print("<th width=100>"+"信息"+"</th>");
+    out.print("<th width=100>"+"价格"+"</th>");
+    out.print("</tr>");
     while(rs.next()){
-      out. print("<tr>");
-      out. print("<td>"+rs.getString(1)+"</td>");
-      out. print("<td>"+rs.getString(2)+"</td>");
-      out. print("<td>"+rs.getString(3)+"</td>");
-      out. print("</tr>");
+      out.print("<tr>");
+      out.print("<td>"+rs.getString(1)+"</td>");
+      out.print("<td>"+rs.getString(2)+"</td>");
+      out.print("<td>"+rs.getString(3)+"</td>");
+      out.print("</tr>");
     }
     out.print("</table>");
     con.close();
   }
   catch(SQLException e){
     out.print(e);
-  }
+  }out.print("<br/>");
 %>
+<p style="line-height:10px"> &nbsp;</p>
 </div>
-</BODY></HTML>
+
+
+<div class="footer">
+<p align="center"><a href="index.jsp">首页</a> | 
+<a href="lookBook.jsp">浏览书籍</a>| 
+<a href="searchBook.jsp">查询书籍</a> | 
+<a href="lookOrderForm.jsp">查看订单</a> | 
+<a href="lookShoppingCar.jsp">我的购物车</a>
+  <br />
+      Copyright &copy; &nbsp;<a href="yuanshishuzhai.html">神奇书屋</a>&nbsp;&nbsp;2018&nbsp;&nbsp;| &nbsp;&nbsp;热线：888-520-1314&nbsp;&nbsp;| &nbsp;&nbsp;地址：深圳市南山区华侨城暨南大学深圳旅游学院</p> </div>
+
+</div>
+
+</div>
+</body></HTML>

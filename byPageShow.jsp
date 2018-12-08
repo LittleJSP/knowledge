@@ -4,14 +4,41 @@
 <jsp:useBean id="dataBean" class="mybean.data.DataByPage" scope="session"/>
 
 <HTML>
-<head><%@ include file="head.txt" %>
+<head>
 <style type="text/css">
 @import url("css/bypageshow.css");
 </style></head>
-<Body>
-<div class="content" align="center">
+
+<body>
+
+<div class="warpper">
+
+<div class="header">
+<br/><h2 align="center">神奇书屋</h2>
+
+<div align="center" class="daohang">
+<ul>
+  <li><a href="index.jsp">首页</a></li>
+   <li><a href="lookBook.jsp#content">浏览书籍</a></li>
+  <li><a href="searchBook.jsp#content">查询书籍</a></li>
+  <li><a href="lookOrderForm.jsp#content">查看订单</a></li>
+  <li><a href="lookShoppingCar.jsp#content">我的购物车</a></li>
+</ul></div>
+
+<div class="xiaodaohang">
+ <ul>
+    <li><a href="exitServlet">退出</a></li>
+    <li><a href="inputRegisterMess.jsp#content">注册</a></li>
+    <li><a href="login.jsp#content">登录</a></li>
+  </ul>
+</div>
+</div>
+
+
+<div class="content">
+<div class="chaxun" align="center">
 <input type="button" name="Submit" onclick="javascript:history.back(-1);" value="返回" class="btn">
-<center>
+
 <BR><h4>当前显示的内容是：</h4>
 <table border=2>
 <tr>
@@ -100,20 +127,20 @@
     输入页码:<Input type=text name="currentPage" size=2>
     <Input type=submit name="g" value ="提交" class="tijiao"></FORM></td></tr>
 </Table>
-</Center>
+<br/>
 </div>
 
 
 <div class="footer">
 <p align="center"><a href="index.jsp">首页</a> |
-<a href="lookCosmetic.jsp#content">浏览书籍</a>|
-<a href="searchCosmetic.jsp#content">查询书籍</a> |
+<a href="lookBook.jsp#content">浏览书籍</a>|
+<a href="searchBook.jsp#content">查询书籍</a> |
 <a href="lookOrderForm.jsp#content">查看订单</a> |
 <a href="lookShoppingCar.jsp#content">我的购物车</a>
-<br/><br />
-Copyright &copy; &nbsp;<a href="index.jsp">神奇书屋</a>&nbsp;&nbsp;2018&nbsp;&nbsp;| &nbsp;&nbsp;热线：888-520-1314&nbsp;&nbsp;| &nbsp;&nbsp;地址：深圳市南山区华侨城暨南大学深圳旅游学院</p>
+<br/>
+Copyright &copy; &nbsp;<a href="index.jsp">神奇书屋</a>&nbsp;&nbsp;2018&nbsp;&nbsp;| &nbsp;&nbsp;热线：888-520-1314&nbsp;&nbsp;| &nbsp;&nbsp;地址：深圳市南山区华侨城暨南大学深圳旅游学院</p><br/>
 </div>
 </div>
 
-
-</BODY ></HTML>
+</div>
+</body ></HTML>
