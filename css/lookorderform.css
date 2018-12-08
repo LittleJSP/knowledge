@@ -115,7 +115,7 @@ font-weight:bold;
 }
 
 .dingdan{
-	width:1000px;
+	width:1030px;
         position:relative;
        background-color: rgba(255,255,255,0.8);
        top:178px;
@@ -123,18 +123,6 @@ font-weight:bold;
        z-index:0;
 }
 
-.submit{
-	background:#8F4B18;
-	font-size: 14px;
-	color: #FFF;
-	font-weight:bold;
-	width:56px;
-	height:28px;
-        position:absolute;
-        left:485px;
-	top:230px;
-	margin-top:0px;
-}
 
 table th{
     color:#630;
@@ -145,7 +133,7 @@ table th{
 /*底部*/
 .footer{
 	position:relative;
-        top:180px;
+        top:380px;
         margin:0 auto;
 }
 .footer p{

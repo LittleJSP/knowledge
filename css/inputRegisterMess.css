@@ -19,7 +19,7 @@ text-align:center;
     margin:0 auto;
     text-align:center;
     width:100%;
-    
+
 }
 
 .header{	/*上面部分*/
@@ -130,11 +130,11 @@ font-weight:bold;
 	font-size: 14px;
 	color: #FFF;
 	font-weight:bold;
-	width: 56px;
-	height: 28px;
-        position:absolute;
-        left:485px;
-	top:190px;
+	width:56px;
+	height:28px;
+        position:relative;
+        left:-273px;
+	top:35px;
 	margin-top:0px;
 }
 
@@ -142,7 +142,7 @@ font-weight:bold;
 /*底部*/
 .footer{
 	position:relative;
-        top:200px;
+        top:180px;
         margin:0 auto;
 }
 .footer p{

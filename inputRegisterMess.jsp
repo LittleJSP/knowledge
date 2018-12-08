@@ -62,10 +62,10 @@
         
         <td><input type=submit name="g" value="提交" class="submit"></td>
     </tr></table></Form>
-</div>
+
    <br/>
 
-<div align="center">
+
     <p><h2>注册反馈</h2>
     <jsp:getProperty name="userBean" property="backNews"/>
     <table border=3>
@@ -77,7 +77,9 @@
     <td><jsp:getProperty name="userBean" property="address" /></td></tr>
     <tr><td>电话：</td>
     <td><jsp:getProperty name="userBean" property="phone" /></td></tr>
-    </table></div>
+    </table>
+<br/>
+</div>
 
 
 <div class="footer">
