@@ -9,6 +9,7 @@
 @import url("css/bypageshow.css");
 </style></head>
 
+<title>‰Ø¿¿ ÈºÆ</title>
 <body>
 
 <div class="warpper">
