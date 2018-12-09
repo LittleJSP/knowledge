@@ -11,12 +11,12 @@ navRoot=document.getElementByld("nav");
 for(i=0;i<navRoot.childNodes.length;i++){
 node=navRoot.childNodes.length;i++){
 node=navRoot.childNodes[i];
-if(node.nodeName=="LI){
+if(node.nodeName=="LI"){
 node.onmouseover=function(){
 this.className+="over";
 }
 node.onmouseout=function(){
-this.className=this.className.replace("over","");
+this.className=this.className.replace("over","")；
 }}}}}
 window.onload=startList;
 </script>
@@ -42,8 +42,10 @@ window.onload=startList;
   <li><a href="index.jsp">首页</a></li>
   <li><a href="lookBook.jsp#content">浏览书籍</a></li>
   <li><a href="searchBook.jsp#content">查询书籍</a></li>
+  <li><a href="showBookReview.jsp#content">查询书评</a></li>
+  <li><a href="lookShoppingCar.jsp#content">我的购物车</a></li>
   <li><a href="lookOrderForm.jsp#content">查看订单</a></li>
-   <li><a href="lookShoppingCar.jsp#content">我的购物车</a></li>
+
 </ul>
 </div>
 </div></div>
