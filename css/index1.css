@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "gb2312";
 
 body{
 margin:0px;
@@ -8,8 +8,8 @@ line-height:1.5em;
 background-color:#FFC;
 width:1345px;
 background-image:url(../image/bigbook.jpg);
-background-position:center;
 background-size:100% 100%;
+background-position:center;
 background-attachment:fixed;
 background-repeat:no-repeat;
 text-align:center;
@@ -22,18 +22,41 @@ text-align:center;
 
 }
 
-.header{	/*上面部分*/
-width: 1345px;
-text-align:center;
-margin:0 auto;
-position:absolute;
+.zhongjian{
+background-color:rgba(255,255,255,0.3);
+position:relative;
+width:1365px;
+height:315px;
+top:150px;
+
 }
 
-.header h2{
-font-size:70px;
-position:absolute;
-top:9px;
-left:540px;
+.header h1{
+font-size:110px;
+position:relative;
+top:70px;
+}
+
+.header p{
+color:#FFF;
+position:relative;
+left:-5px;
+top:-5px;
+font-size:21px;
+font-weight:bold;
+width: 400px;
+height: 32px;
+margin: 5px auto;
+}
+
+
+.header{
+width:1350px;
+text-align:center;
+margin:0 auto;
+position:relative;
+ margin:0 auto;
+ text-align:center;
 }
 
 .xiaodaohang ul{
@@ -48,10 +71,10 @@ padding: 0 2px;
 position: relative;
 display: inline;
 float:right;
-right:20px;
-top:-30px;
+right:17px;
+top:15px;
 z-index: 100;
-height:30px;
+height: 30px;
 }
 
 .xiaodaohang ul li a{
@@ -66,12 +89,9 @@ text-decoration:none;
 outline:none;
 text-align:center;
 }
-
 .xiaodaohang ul li a:link{
 color:#FFF;
 }
-
-
 .xiaodaohang ul li a.selected,.xiaodaohang ul li a:hover{
 color:#000;
 background-color:#D9D9D9;
@@ -79,14 +99,13 @@ opacity: 0.8;
 }
 
 
-/*导航*/
 .daohang ul li{
 position:relative;
 display:inline;
 float:left;
-padding: 0 0.5px;
-top:95px;
-left:290px;
+padding: 0 1px;
+left:280px;
+top:10px;
 z-index:100;
 height:30px;
 margin:0 auto;
@@ -94,57 +113,36 @@ margin:0 auto;
 
 .daohang a:link{
 background:#630;
+font-weight:bold;
 }
 
 .daohang ul li a{
 display:block;
-padding:0 28px;
-height:38px;
-line-height:37px;
+padding:0 30px;
+height:40px;
+line-height:40px;
 font-size:16px;
-color: #FFF;
+color:#FFF;
+font-weight:bold;
 text-decoration:none;
 outline:none;
 text-align:center;
-font-weight:bold;
 }
 
 .daohang ul li a.select,.daohang ul li a:hover{
-  color:#630;
-  background:#DFDFDF;
-  opacity: 0.9;
+color:#630;
+background:#DFDFDF;
+font-weight:bold;
+opacity: 0.9;
 }
 
-
-.zhuce{
-	width:1030px;
-	position:relative;
-        background-color: rgba(255,255,255,0.8);
-        top:173px;
-	z-index:0;
-        margin:0 auto;
-}
-
-.submit{
-	background:#8F4B18;
-	font-size: 14px;
-	color: #FFF;
-	font-weight:bold;
-	width:56px;
-	height:28px;
-        position:relative;
-        left:-273px;
-	top:35px;
-	margin-top:0px;
-}
-
-
-/*底部*/
 .footer{
-	position:relative;
-        top:180px;
-        margin:0 auto;
+        float:left;
+        position:relative;
+        left:380px;
+        top:170px;
 }
+
 .footer p{
         color:rgba(255,255,255,0.5);
 	font-weight:bold;
@@ -156,6 +154,7 @@ font-weight:bold;
 	color:#714D37;
 
 }
+
 .footer a:hover {
 	font-weight:bold;
 }

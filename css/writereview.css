@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 
 body{
 margin:0px;
@@ -116,7 +116,7 @@ font-weight:bold;
 }
 
 
-.zhuce{
+.writereview{
 	width:1030px;
 	position:relative;
         background-color: rgba(255,255,255,0.8);
@@ -127,16 +127,45 @@ font-weight:bold;
 
 .submit{
 	background:#8F4B18;
-	font-size: 14px;
+	font-size:14px;
 	color: #FFF;
 	font-weight:bold;
-	width:56px;
-	height:28px;
+	width:75px;
+	height:29px;
         position:relative;
-        left:-273px;
-	top:35px;
+        left:0px;
+	top:-10px;
 	margin-top:0px;
 }
+
+.writereview a:link{
+        
+        font-size:16px;
+}
+
+
+.writereview a{
+	font-size:15px;
+	color:#630;
+	font-weight:bold;
+	width:75px;
+        position:relative;
+        left:0px;
+	top:0px;
+	margin-top:0px;
+     height:32px;
+     text-align:center;
+}
+
+.writereview a.select,.writereview a:hover{
+  color:#FFF;
+  background:#630;
+  
+}
+
+
+
+
 
 
 /*底部*/

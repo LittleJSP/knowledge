@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 
 body{
 margin:0px;
@@ -19,7 +19,6 @@ text-align:center;
     margin:0 auto;
     text-align:center;
     width:100%;
-
 }
 
 .header{	/*上面部分*/
@@ -84,8 +83,8 @@ opacity: 0.8;
 position:relative;
 display:inline;
 float:left;
-padding: 0 0.5px;
-top:95px;
+padding:0 0.5px;
+top:96px;
 left:290px;
 z-index:100;
 height:30px;
@@ -116,11 +115,11 @@ font-weight:bold;
 }
 
 
-.zhuce{
+.content{
 	width:1030px;
 	position:relative;
         background-color: rgba(255,255,255,0.8);
-        top:173px;
+        top:174px;
 	z-index:0;
         margin:0 auto;
 }
@@ -133,17 +132,41 @@ font-weight:bold;
 	width:56px;
 	height:28px;
         position:relative;
-        left:-273px;
-	top:35px;
+        left:12px;
+	top:20px;
 	margin-top:0px;
+}
+
+
+.showbookreview a:link{
+        
+        font-size:16px;
+}
+
+
+.showbookreview a{
+	font-size:15px;
+	color:#630;
+	font-weight:bold;
+	width:75px;
+        position:relative;
+	margin-top:0px;
+     height:32px;
+     text-align:center;
+}
+
+.showbookreview a.select,.showbookreview a:hover{
+  color:#FFF;
+  background:#630;
+  
 }
 
 
 /*底部*/
 .footer{
 	position:relative;
-        top:180px;
-        margin:0 auto;
+        top:80px;
+        margin:50px 0 5px 0;
 }
 .footer p{
         color:rgba(255,255,255,0.5);
