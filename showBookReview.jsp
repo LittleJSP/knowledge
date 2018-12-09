@@ -8,7 +8,7 @@
   @import url("css/showbookreview.css");
   </style></head>
 
-<title>²é¿´ÊéÆÀ</title>
+<title>æŸ¥çœ‹ä¹¦è¯„</title>
   
 
 
@@ -16,23 +16,23 @@
   <div class="warpper">
 
   <div class="header">
-  <br/><h2 align="center">ÉñÆæÊéÎİ</h2>
+  <br/><h2 align="center">ç¥å¥‡ä¹¦å±‹</h2>
 
   <div align="center" class="daohang">
   <ul>
-    <li><a href="index.jsp">Ê×Ò³</a></li>
-     <li><a href="lookBook.jsp#content">ä¯ÀÀÊé¼®</a></li>
-    <li><a href="searchBook.jsp#content">²éÑ¯Êé¼®</a></li>
-    <li><a href="showBookReview.jsp#content">²éÑ¯ÊéÆÀ</a></li>
-    <li><a href="lookShoppingCar.jsp#content">ÎÒµÄ¹ºÎï³µ</a></li>
-    <li><a href="lookOrderForm.jsp#content">²é¿´¶©µ¥</a></li>
+    <li><a href="index.jsp">é¦–é¡µ</a></li>
+     <li><a href="lookBook.jsp#content">æµè§ˆä¹¦ç±</a></li>
+    <li><a href="searchBook.jsp#content">æŸ¥è¯¢ä¹¦ç±</a></li>
+    <li><a href="showBookReview.jsp#content">æŸ¥è¯¢ä¹¦è¯„</a></li>
+    <li><a href="lookShoppingCar.jsp#content">æˆ‘çš„è´­ç‰©è½¦</a></li>
+    <li><a href="lookOrderForm.jsp#content">æŸ¥çœ‹è®¢å•</a></li>
   </ul></div>
 
   <div class="xiaodaohang">
    <ul>
-      <li><a href="exitServlet">ÍË³ö</a></li>
-      <li><a href="inputRegisterMess.jsp#content">×¢²á</a></li>
-      <li><a href="login.jsp#content">µÇÂ¼</a></li>
+      <li><a href="exitServlet">é€€å‡º</a></li>
+      <li><a href="inputRegisterMess.jsp#content">æ³¨å†Œ</a></li>
+      <li><a href="login.jsp#content">ç™»å½•</a></li>
     </ul>
   </div>
   </div>
@@ -50,16 +50,16 @@
   }
   catch(Exception e){}
   try{
-    String url="jdbc:mysql://127.0.0.1/shop?"+"user=root&password=&characterEncoding=gb2312&serverTimezone=UTC";
+    String url="jdbc:mysql://127.0.0.1/knowledge?"+"user=root&password=&characterEncoding=gb2312&serverTimezone=UTC";
     con=DriverManager.getConnection(url);
     sql=con.createStatement();
     String cdn="SELECT bookName,title,messages FROM bookreview";
     rs= sql.executeQuery(cdn);
       out.print("<br>-------------------------------------<br>");
     while(rs.next()){
-      out.print("ÆÀ¼ÛÊéÄ¿£º"+rs.getString(1)+",");
-      out.print("ÊéÆÀ±êÌâ£º"+rs.getString(2)+"<br>");
-      out.print("ÊéÆÀÄÚÈİ£º<br>"+rs.getString(3));
+      out.print("è¯„ä»·ä¹¦ç›®ï¼š"+rs.getString(1)+",");
+      out.print("ä¹¦è¯„æ ‡é¢˜ï¼š"+rs.getString(2)+"<br>");
+      out.print("ä¹¦è¯„å†…å®¹ï¼š<br>"+rs.getString(3));
       out.print("<br>-------------------------------------<br>");
     }
 
@@ -69,20 +69,20 @@
     out.print(e);
   }
 %>
-  <br/><a href="writeReview.jsp">±àĞ´ÊéÆÀ</a>
+  <br/><a href="writeReview.jsp">ç¼–å†™ä¹¦è¯„</a>
 </div>
 
 
 
 <div class="footer">
-<p align="center"><a href="index.jsp">Ê×Ò³</a> |
-<a href="lookBook.jsp#content">ä¯ÀÀÊé¼®</a>|
-<a href="searchBook.jsp#content">²éÑ¯Êé¼®</a> |
-<a href="showBookReview.jsp">²éÑ¯ÊéÆÀ</a> |
-<a href="lookShoppingCar.jsp#content">ÎÒµÄ¹ºÎï³µ</a>|
-<a href="lookOrderForm.jsp#content">²é¿´¶©µ¥</a>
+<p align="center"><a href="index.jsp">é¦–é¡µ</a> |
+<a href="lookBook.jsp#content">æµè§ˆä¹¦ç±</a>|
+<a href="searchBook.jsp#content">æŸ¥è¯¢ä¹¦ç±</a> |
+<a href="showBookReview.jsp">æŸ¥è¯¢ä¹¦è¯„</a> |
+<a href="lookShoppingCar.jsp#content">æˆ‘çš„è´­ç‰©è½¦</a>|
+<a href="lookOrderForm.jsp#content">æŸ¥çœ‹è®¢å•</a>
 <br/>
-Copyright &copy; &nbsp;<a href="index.jsp">ÉñÆæÊéÎİ</a>&nbsp;&nbsp;2018&nbsp;&nbsp;| &nbsp;&nbsp;ÈÈÏß£º888-520-1314&nbsp;&nbsp;| &nbsp;&nbsp;µØÖ·£ºÉîÛÚÊĞÄÏÉ½Çø»ªÇÈ³ÇôßÄÏ´óÑ§ÉîÛÚÂÃÓÎÑ§Ôº</p>
+Copyright &copy; &nbsp;<a href="index.jsp">ç¥å¥‡ä¹¦å±‹</a>&nbsp;&nbsp;2018&nbsp;&nbsp;| &nbsp;&nbsp;çƒ­çº¿ï¼š888-520-1314&nbsp;&nbsp;| &nbsp;&nbsp;åœ°å€ï¼šæ·±åœ³å¸‚å—å±±åŒºåä¾¨åŸæš¨å—å¤§å­¦æ·±åœ³æ—…æ¸¸å­¦é™¢</p>
 </div>
 </div>
 
