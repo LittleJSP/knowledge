@@ -9,25 +9,26 @@
 <div id="warpper">
 <div class="header">
  <ul>
-    <li><a href="exitServlet">�˳�</a></li>
-    <li><a href="inputRegisterMess.jsp#content">ע��</a></li>
-    <li><a href="login.jsp">��¼</a></li>
+    <li><a href="exitServlet">退出</a></li>
+    <li><a href="inputRegisterMess.jsp#content">注册</a></li>
+    <li><a href="login.jsp">登录</a></li>
   </ul>
-<div class="zhongjian"><h1>��������</h1></div>
+<div class="zhongjian"><h1>神奇书屋</h1></div>
 
 
-<p>Ȱ��Īϧ�����£�Ȱ��ϧȡ����ʱ</p>
+<p>劝君莫惜金缕衣，劝君惜取少年时</p>
 
 <div align="center" class="daohang">
 <ul>
-  <li><a href="index.jsp">��ҳ</a></li>
-   <li><a href="lookBook.jsp#content">����鼮</a>
-    <ul><a href="#">������</a></ul>
-    <ul><a href="#">ͼ��</a></ul>
+  <li><a href="index.jsp">首页</a></li>
+   <li><a href="lookBook.jsp#content">浏览书籍</a>
+    <ul><a href="#">电子书</a></ul>
+    <ul><a href="#">图书</a></ul>
 </li>
-  <li><a href="searchBook.jsp#content">��ѯ�鼮</a></li>
-  <li><a href="lookOrderForm.jsp#content">�鿴����</a></li>
-   <li><a href="lookShoppingCar.jsp#content">�ҵĹ��ﳵ</a></li>
+  <li><a href="searchBook.jsp#content">查询书籍</a></li>
+  <li><a href="lookOrderForm.jsp#content">查看订单</a></li>
+  <li><a href="showBookReview.jsp#content">查看书评</a></li>
+   <li><a href="lookShoppingCar.jsp#content">我的购物车</a></li>
 </ul>
 </div>
 </div></div>
