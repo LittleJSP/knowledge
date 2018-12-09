@@ -71,4 +71,14 @@
   <servlet-name>exitServlet </servlet-name>
   <url-pattern>/exitServlet</url-pattern>
 </servlet-mapping>
+  
+ <servlet>
+  <servlet-name>writeReview_Servlet </servlet-name>
+  <servlet-class>myservlet.control.writeReview_Servlet </servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name> writeReview_Servlet </servlet-name>
+  <url-pattern>/writeReview_Servlet </url-pattern>
+</servlet-mapping>
+  
 </web-app>
