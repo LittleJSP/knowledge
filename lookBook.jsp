@@ -6,7 +6,7 @@
 <style type="text/css">
 @import url("css/lookbook.css");
 </style></head>
-
+<title>查询书籍</title>
 <body>
 
 <div class="warpper">
@@ -78,7 +78,7 @@
 <a href="lookBook.jsp">浏览书籍</a>|
 <a href="searchBook.jsp#content">查询书籍</a> |
 <a href="searchBookReview.jsp">查询书评</a> |
-<a href="searchBookReview.jsp">查询书评</a> |
+<a href="showBookReview.jsp">查询书评</a> |
 <a href="lookShoppingCar.jsp#content">我的购物车</a>|
 <a href="lookOrderForm.jsp#content">查看订单</a>
      <br />

@@ -1,13 +1,18 @@
 <%@ page contentType="text/html;charset=gb2312"%>
 <jsp:useBean id="loginBean" class="mybean.data.Login" scope="session"/>
 <%@ page import="java.sql.*" %>
+
 <HIML>
   <head>
   <style type="text/css">
   @import url("css/showbookreview.css");
   </style></head>
 
-  <body>
+<title>查看书评</title>
+  
+
+
+<body>
   <div class="warpper">
 
   <div class="header">
@@ -34,6 +39,8 @@
 
 
 <div class="content" align="center">
+<div class="showbookreview">
+<br/>
 <%
   Connection con;
   Statement sql;
@@ -62,7 +69,7 @@
     out.print(e);
   }
 %>
-  <br><a href="writeReview.jsp">编写书评</a></br>
+  <br/><a href="writeReview.jsp">编写书评</a>
 </div>
 
 
@@ -71,7 +78,7 @@
 <p align="center"><a href="index.jsp">首页</a> |
 <a href="lookBook.jsp#content">浏览书籍</a>|
 <a href="searchBook.jsp#content">查询书籍</a> |
-<a href="searchBookReview.jsp">查询书评</a> |
+<a href="showBookReview.jsp">查询书评</a> |
 <a href="lookShoppingCar.jsp#content">我的购物车</a>|
 <a href="lookOrderForm.jsp#content">查看订单</a>
 <br/>

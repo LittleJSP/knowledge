@@ -8,7 +8,7 @@
 <style type="text/css">
 @import url("css/showdetail.css");
 </style></head>
-
+<title>查看书籍细节</title>
 <body>
 
 <div class="warpper">
@@ -121,7 +121,7 @@
 <p align="center"><a href="index.jsp">首页</a> |
 <a href="lookBook.jsp#content">浏览书籍</a>|
 <a href="searchBook.jsp#content">查询书籍</a> |
-<a href="searchBookReview.jsp">查询书评</a> |
+<a href="showBookReview.jsp">查询书评</a> |
 <a href="lookShoppingCar.jsp#content">我的购物车</a>|
 <a href="lookOrderForm.jsp#content">查看订单</a>
 <br/>
