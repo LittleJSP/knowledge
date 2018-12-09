@@ -113,6 +113,19 @@ CREATE TABLE `user` (
 
 /*Data for the table `user` */
 
+/*Table structure for table `bookreview` */
+
+DROP TABLE IF EXISTS `bookreview`;
+
+CREATE TABLE `bookreview` (
+  `bookName` char(200) DEFAULT NULL,
+  `title` char(200) DEFAULT NULL,
+  `messages` char(200) DEFAULT NULL,
+  PRIMARY KEY (`bookName`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=gbk;
+
+/*Data for the table `bookreview` */
+
 insert  into `user`(`logname`,`password`,`phone`,`address`,`realname`) values 
 ('Andrew','123','13534572733','240924154@qq.com','小斌');
 
