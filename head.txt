@@ -27,7 +27,7 @@
 </li>
   <li><a href="searchBook.jsp#content">查询书籍</a></li>
   <li><a href="lookOrderForm.jsp#content">查看订单</a></li>
-  <li><a href="showBookReview.jsp#content">查看书评</a></li>
+  <li><a href="showBookReview.jsp#content">查询书评</a></li>
    <li><a href="lookShoppingCar.jsp#content">我的购物车</a></li>
 </ul>
 </div>
