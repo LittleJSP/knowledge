@@ -32,7 +32,6 @@ public class PutGoodsToCar extends HttpServlet{
     response.setContentType("text/html;charset=gb2312");
     try{
       PrintWriter out =response.getWriter();
-      out.print("<html><head><%@ include file='head.text'%></head>");
       out.println("你又买到了一本好书噢^_^");
       out.println("<body><h2>"+goods+"放入购物车</h2>");
       out.println("查看购物车或返回浏览书本<br>");

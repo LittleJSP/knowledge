@@ -1,4 +1,4 @@
-﻿@charset "gb2312";
+@charset "gb2312";
 
 body{
 margin:0px;
@@ -137,10 +137,8 @@ opacity: 0.9;
 }
 
 .footer{
-        float:left;
-        position:relative;
-        left:380px;
-        top:170px;
+        position:fixed;
+        margin:180px 400px;
 }
 
 .footer p{

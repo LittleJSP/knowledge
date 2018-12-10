@@ -5,32 +5,32 @@
 <%@ page import="java.sql.*" %>
 <HTML>
 
-  
+
 <head>
-  
+
 <style type="text/css">
-  
+
 @import url("css/writereview.css");
-  
+
 </style></head>
 
 <title>写书评</title>
-  
+
 <body>
-  
+
 <div class="warpper">
 
-  
+
 <div class="header">
-  
+
 <br/><h2 align="center">神奇书屋</h2>
 
-  
+
 <div align="center" class="daohang">
-  
+
 <ul>
 <li><a href="index.jsp">首页</a></li>
-     
+
     <li><a href="lookBook.jsp#content">浏览书籍</a></li>
 
     <li><a href="searchBook.jsp#content">查询书籍</a></li>
@@ -42,7 +42,7 @@
 
 
   <div class="xiaodaohang">
-   
+
 <ul>
 
       <li><a href="exitServlet">退出</a></li>
