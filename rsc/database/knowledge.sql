@@ -34,7 +34,7 @@ CREATE TABLE `bookform` (
 
 /*Data for the table `bookform` */
 
-insert  into `bookform`(`ISBN`,`book_name`,`book_writer`,`book_publisher`,`book_price`,`book_mess`,`book_pic`,`id`) values 
+insert  into `bookform`(`ISBN`,`book_name`,`book_writer`,`book_publisher`,`book_price`,`book_mess`,`book_pic`,`id`) values
 ('1001','国史大纲','钱穆','商务印书馆',76,'对中国历史的发展大势及各时期的特点的阐述在中国史学界无出其右','1001.JPG',10),
 ('1002','中国史纲','张荫麟','商务印书馆',42,'本书虽属未完之作，但却广受赞誉','1002.JPG',10),
 ('101','失乐园','渡边淳一','青岛出版社',45,'渡边淳一代表作，林少华译本','101.JPG',1),
@@ -68,7 +68,7 @@ CREATE TABLE `classify` (
 
 /*Data for the table `classify` */
 
-insert  into `classify`(`id`,`name`) values 
+insert  into `classify`(`id`,`name`) values
 (1,'亚洲文学'),
 (2,'国内文学'),
 (3,'欧美文学'),
@@ -94,7 +94,7 @@ CREATE TABLE `orderform` (
 
 /*Data for the table `orderform` */
 
-insert  into `orderform`(`id`,`logname`,`mess`,`sum`) values 
+insert  into `orderform`(`id`,`logname`,`mess`,`sum`) values
 (1,'Andrew','1:(201,文化苦旅,余秋雨,长江文艺出版社,38.0)2:(?101,失乐园,渡边淳一,青岛出版社,45.0)',83),
 (2,'Andrew','1:(101,失乐园,渡边淳一,青岛出版社,45.0)',45);
 
@@ -118,7 +118,7 @@ CREATE TABLE `user` (
 DROP TABLE IF EXISTS `bookreview`;
 
 CREATE TABLE `bookreview` (
-  `bookName` char(200) DEFAULT NULL,
+  `bookName` char(200) NOT NULL,
   `title` char(200) DEFAULT NULL,
   `messages` char(200) DEFAULT NULL,
   PRIMARY KEY (`bookName`)
@@ -126,7 +126,7 @@ CREATE TABLE `bookreview` (
 
 /*Data for the table `bookreview` */
 
-insert  into `user`(`logname`,`password`,`phone`,`address`,`realname`) values 
+insert  into `user`(`logname`,`password`,`phone`,`address`,`realname`) values
 ('Andrew','123','13534572733','240924154@qq.com','小斌');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

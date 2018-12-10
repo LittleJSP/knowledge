@@ -18,12 +18,12 @@ public class writeReview_Servlet extends HttpServlet{
             }
       }
       catch(Exception exp){
-            resultBean=new writeReview_Bean();  
+            resultBean=new writeReview_Bean();
             request.setAttribute("resultBean",resultBean);
-      } 
+      }
      try{  Class.forName("com.mysql.jdbc.Driver");
      }
-     catch(Exception e){} 
+     catch(Exception e){}
      request.setCharacterEncoding("gb2312");
      String dataBase = request.getParameter("dataBase");
      String tableName = request.getParameter("tableName");
@@ -37,35 +37,35 @@ public class writeReview_Servlet extends HttpServlet{
      String condition = "INSERT INTO "+tableName+" VALUES"+
       "("+"'"+bN+"','"+ti+"','"+me+"')";
      Connection con;
-     Statement sql; 
+     Statement sql;
      ResultSet rs;
-     try{ 
+     try{
           String uri="jdbc:mysql://127.0.0.1/"+dataBase+"?"+
-                      "user=root&password=&characterEncoding=gb2312";
+                      "user=root&password=&characterEncoding=gb2312&serverTimezone=UTC";
           con=DriverManager.getConnection(uri);
           sql=con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,
                                  ResultSet.CONCUR_READ_ONLY);
           sql.executeUpdate(condition);
           rs=sql.executeQuery("SELECT * FROM "+tableName);
           ResultSetMetaData metaData = rs.getMetaData();
-          int columnCount = metaData.getColumnCount(); 
+          int columnCount = metaData.getColumnCount();
           String []columnName = new String[columnCount];
           for(int i=0;i<columnName.length;i++) {
              columnName[i] = metaData.getColumnName(i+1);
           }
-          resultBean.setColumnName(columnName);  
+          resultBean.setColumnName(columnName);
           rs.last();
-          int rowNumber=rs.getRow(); 
+          int rowNumber=rs.getRow();
           String [][] tableRecord=resultBean.getTableRecord();
           tableRecord = new String[rowNumber][columnCount];
           rs.beforeFirst();
           int i=0;
           while(rs.next()){
-            for(int k=0;k<columnCount;k++) 
+            for(int k=0;k<columnCount;k++)
               tableRecord[i][k] = rs.getString(k+1);
-            i++; 
+            i++;
           }
-          resultBean.setTableRecord(tableRecord); 
+          resultBean.setTableRecord(tableRecord);
           con.close();
           RequestDispatcher dispatcher=
           request.getRequestDispatcher("showBookReview.jsp");
@@ -74,7 +74,7 @@ public class writeReview_Servlet extends HttpServlet{
      catch(SQLException e){
           System.out.println(e);
           fail(request,response,"Fail to add record"+e.toString());
-     }  
+     }
    }
    public  void  doGet(HttpServletRequest request,HttpServletResponse response)
            throws ServletException,IOException{
@@ -91,6 +91,6 @@ public class writeReview_Servlet extends HttpServlet{
          out.println("<a href =writeReview.jsp>add record</a>");
          out.println("</body></html>");
         }
-        catch(IOException exp){} 
+        catch(IOException exp){}
     }
 }
