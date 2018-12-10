@@ -44,9 +44,9 @@
  <form action="searchByConditionServlet" Method="post">
     <br>输入查询信息:<Input type=text name="searchMess"><br/>
 
-    <input type=radio name="radio" value="ISBN">ISBN号
-    <Input type=radio name="radio" value="book_name" checked="ok">书名
-    <Input type=radio name="radio" value="writer" checked="ok">作者
+    <input type=radio name="radio" value="ISBN" checked="ok">ISBN号
+    <Input type=radio name="radio" value="name">书名
+    <Input type=radio name="radio" value="writer">作者
     <Input type=radio name="radio" value="book_price">书价
     <br><Input type=submit name="g" value="查询" class="submit">
  </form></div>

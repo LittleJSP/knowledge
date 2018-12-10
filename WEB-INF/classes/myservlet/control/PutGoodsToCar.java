@@ -33,7 +33,7 @@ public class PutGoodsToCar extends HttpServlet{
     try{
       PrintWriter out =response.getWriter();
       out.print("<html><head><%@ include file='head.text'%></head>");
-      out.println("暂时无法导入导航栏，搞不懂^_^");
+      out.println("你又买到了一本好书噢^_^");
       out.println("<body><h2>"+goods+"放入购物车</h2>");
       out.println("查看购物车或返回浏览书本<br>");
       out.println("<a href=lookShoppingCar.jsp#content>查看购物车</a>");

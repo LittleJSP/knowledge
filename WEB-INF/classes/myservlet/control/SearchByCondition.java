@@ -26,7 +26,7 @@ public class SearchByCondition extends HttpServlet{
     if(radioMess.equals("ISBN")){
       condition= "SELECT * FROM bookForm where ISBN ='"+searchMess+"'";
     }
-    else if(radioMess.equals("book_name")){
+    else if(radioMess.equals("name")){
       condition= "SELECT * FROM bookForm where book_name LIKE '%"+searchMess+"%'";
     }
     else if(radioMess.equals("writer")){
