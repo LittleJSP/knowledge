@@ -120,8 +120,7 @@ DROP TABLE IF EXISTS `bookreview`;
 CREATE TABLE `bookreview` (
   `bookName` char(200) NOT NULL,
   `title` char(200) DEFAULT NULL,
-  `messages` char(200) DEFAULT NULL,
-  PRIMARY KEY (`bookName`)
+  `messages` char(200) DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=gbk;
 
 /*Data for the table `bookreview` */
