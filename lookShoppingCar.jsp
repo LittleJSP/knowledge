@@ -8,7 +8,7 @@
 <style type="text/css">
 @import url("css/lookbookcar.css");
 </style></head>
-<title>登查看购物车</title>
+<title>查看购物车</title>
 <body>
 
 <div class="warpper">

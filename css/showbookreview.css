@@ -125,21 +125,17 @@ font-weight:bold;
 }
 
 .submit{
+	position:relative;
 	background:#8F4B18;
+	left:4px;
 	font-size: 14px;
 	color: #FFF;
 	font-weight:bold;
-	width:56px;
-	height:28px;
-        position:relative;
-        left:12px;
-	top:20px;
-	margin-top:0px;
+	width: 56px;
+	height: 28px;
+
 }
-
-
 .showbookreview a:link{
-        
         font-size:16px;
 }
 
@@ -155,12 +151,11 @@ font-weight:bold;
      text-align:center;
 }
 
-.showbookreview a.select,.showbookreview a:hover{
+.showbookreview a.select, .showbookreview a:hover{
   color:#FFF;
   background:#630;
   
 }
-
 
 /*底部*/
 .footer{

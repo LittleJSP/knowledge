@@ -74,7 +74,7 @@ public class HandleRegister extends HttpServlet{
 		con.close();
 		}
 		catch(SQLException exp){
-			backNews="该会员名已被使用，请您更换名字" + exp;
+			backNews="该会员名已被使用，请您更换名字"+exp;
 			userBean.setBackNews(backNews);
 		}
 		RequestDispatcher dispatcher=request.getRequestDispatcher("inputRegisterMess.jsp");
