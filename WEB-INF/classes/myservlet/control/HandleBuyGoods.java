@@ -89,7 +89,7 @@ out.println("<div class='xiaodaohang'><ul>");
       out.println("<div class='content'>");
       out.println("<div class='xiadanle' align = 'center'>");
       out.println("<br/><br/>");
-      out.println("恭喜你又买了一本好书~");
+      out.println("下单成功，书本即将启程~");
      out.println("<h2>"+backNews+"</h2>");
      out.println("返回");
      out.println("<a href= index.jsp>主页</a>");
@@ -108,7 +108,7 @@ out.println("<div class='xiaodaohang'><ul>");
 
       out.println("</div></div></div></body></html>");
 
-           
+
             }
               catch(IOException exp){}
           }
